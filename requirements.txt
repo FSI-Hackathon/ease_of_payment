@@ -1,2 +1,4 @@
 innovation-sandbox
 django
+gunicorn
+django-heroku
