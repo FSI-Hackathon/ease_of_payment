@@ -6,4 +6,4 @@ from django.http import HttpResponse, HttpResponseRedirect
 class Home(View):
 	def get(self, request):
 		context = {}
-		return render(request,'accounts/base.html',context)
+		return render(request,'accounts/base1.html',context)
