@@ -25,7 +25,11 @@ SECRET_KEY = 'x)gvu99r7fr**7f$cwsq5u_-1p0x7gg)i8^4r2r6b-fxn#9j14'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'snappynolwac@gmail.com'
+EMAIL_HOST_PASSWORD = 'nolwac15-04-1996mydjangoweb'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 
 # Application definition
@@ -39,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'payment_processor',
+    'AutoTags',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +127,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'easeofpay_statics', 'static')
 
 STATIC_URL = '/static/'
+
+LOGIN_INCLUSION_TEMPLATE='accounts/login_template.html'
